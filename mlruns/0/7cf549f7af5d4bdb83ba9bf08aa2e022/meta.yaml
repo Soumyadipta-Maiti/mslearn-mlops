@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Soumya/Data%20Science/Others/ML%20OPS/Azure%20MLOPS/mslearn-mlops/mlruns/0/7cf549f7af5d4bdb83ba9bf08aa2e022/artifacts
+end_time: 1754210776379
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7cf549f7af5d4bdb83ba9bf08aa2e022
+run_name: gifted-skink-879
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754210761248
+status: 3
+tags: []
+user_id: v-smaiti

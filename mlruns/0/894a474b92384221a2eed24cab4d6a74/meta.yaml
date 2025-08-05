@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Soumya/Data%20Science/Others/ML%20OPS/Azure%20MLOPS/mslearn-mlops/mlruns/0/894a474b92384221a2eed24cab4d6a74/artifacts
+deleted_time: 1754219580343
+end_time: 1754209475530
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 894a474b92384221a2eed24cab4d6a74
+run_name: sedate-lamb-484
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754209475390
+status: 3
+tags: []
+user_id: v-smaiti

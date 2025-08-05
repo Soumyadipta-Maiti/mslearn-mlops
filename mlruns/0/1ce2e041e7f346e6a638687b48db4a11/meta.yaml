@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Soumya/Data%20Science/Others/ML%20OPS/Azure%20MLOPS/mslearn-mlops/mlruns/0/1ce2e041e7f346e6a638687b48db4a11/artifacts
+end_time: 1754210776568
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ce2e041e7f346e6a638687b48db4a11
+run_name: powerful-cow-880
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754210776455
+status: 3
+tags: []
+user_id: v-smaiti

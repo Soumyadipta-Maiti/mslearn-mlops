@@ -1,15 +1,48 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+
+# Folder containing your training script
+# code: ./src/model
 code: model
+
+# Command to run
 command: >-
-  python 
-  --
-  --
+  python train.py
+  --training_data ${{inputs.training_data}}
+  --reg_rate ${{inputs.reg_rate}}
+
+# command: >-
+#   python 
+#   --
+#   --
+
+# Inputs to the script
 inputs:
-  training_data: 
-    type: uri_folder 
-    path: 
+  training_data:
+    type: uri_file
+    # path: azureml://datastores/workspaceblobstore/paths/diabetes-data/diabetes-dev.csv
+    path: azureml://subscriptions/c182fd88-8b88-46e8-bf51-b2917f6d577e/resourcegroups/rg-mlops/workspaces/ws-mlops/datastores/workspaceblobstore/paths/UI/2025-08-03_120404_UTC/diabetes-prod.csv
+
   reg_rate: 0.01
+
+# inputs:
+#   training_data: 
+#     type: uri_folder 
+#     path: 
+#   reg_rate: 0.01
+
+# Compute & environment
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: 
-experiment_name: 
-description: 
+compute: cpu-cluster
+
+# environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
+# compute: 
+
+# Experiment & description
+experiment_name: diabetes-classification
+description: Training logistic regression model with MLflow autologging
+
+# experiment_name: 
+# description: 
+
+
+# az ml job create --file job.yml --resource-group rg-mlops --workspace-name ws-mlops

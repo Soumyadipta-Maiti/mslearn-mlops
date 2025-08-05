@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Soumya/Data%20Science/Others/ML%20OPS/Azure%20MLOPS/mslearn-mlops/mlruns/0/models/m-482e376bca8d4022a71b92d8a9b9f615/artifacts
+creation_timestamp: 1754209455012
+experiment_id: '0'
+last_updated_timestamp: 1754209466831
+model_id: m-482e376bca8d4022a71b92d8a9b9f615
+model_type: null
+name: model
+source_run_id: 488bfc3184724cf98a4c393c72cd1f56
+status: 2
+status_message: null
