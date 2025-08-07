@@ -36,6 +36,7 @@ name: Manually trigger or auto-trigger an Azure Machine Learning job
 
 
 
+# Trigger a GitHub Actions workflow
 on:
   pull_request:
     branches:
