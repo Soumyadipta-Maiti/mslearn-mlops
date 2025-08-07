@@ -28,7 +28,6 @@ def main(args):
     os.makedirs('outputs', exist_ok=True)
     joblib.dump(model, 'outputs/model.joblib')
 
-
 # def get_csvs_df(path):
 #     if not os.path.exists(path):
 #         raise RuntimeError(f"Cannot use non-existent path provided: {path}")
@@ -54,13 +53,10 @@ def get_csvs_df(path):
         raise RuntimeError(f"No CSV files found in provided data path: {path}")
     return pd.concat((pd.read_csv(f) for f in csv_files), sort=False)
 
-
-
 def split_data(df):
     X = df.drop('Diabetic', axis=1)
     y = df['Diabetic']
     return train_test_split(X, y, test_size=0.2, random_state=42)
-
 
 def train_model(reg_rate, X_train, X_test, y_train, y_test):
     # train model
@@ -77,7 +73,6 @@ def train_model(reg_rate, X_train, X_test, y_train, y_test):
     mlflow.log_metric("auc", auc)
 
     return model
-
 
 def parse_args():
     # setup arg parser
@@ -97,8 +92,5 @@ if __name__ == "__main__":
     main(args)
     print("*" * 60 + "\n\n")
 
-
-
 # python src/model/train.py --training_data experimentation/data/diabetes-dev.csv --reg_rate 0.01
-
 # mlflow ui
