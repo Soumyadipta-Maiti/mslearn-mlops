@@ -42,8 +42,9 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -r requirements.txt
           python -m pip install --upgrade pip
-          pip install pytest pandas
+          # pip install pytest pandas
 
       - name: Run tests
         run: pytest tests/
