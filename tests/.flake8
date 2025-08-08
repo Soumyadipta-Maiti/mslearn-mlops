@@ -10,7 +10,8 @@ ignore =
     N,
     C,
     I
-max-line-length = 79
+; max-line-length = 79
+max-line-length = 100
 exclude = 
     .tox,
     .git,
@@ -23,5 +24,7 @@ exclude =
 per-file-ignores =
     src/__init__.py:D104
     src/*/__init__.py:D104
+    src/model/train copy.py:ALL
+    src/model/train copy 2.py:ALL
 max-complexity = 10
 import-order-style = pep8
