@@ -20,7 +20,10 @@ exclude =
     *.egg-info,
     .cache,
     .eggs,
-    develop
+    develop,
+    .github/backups,
+    src/model/train_copy.py,
+    src/model/train_copy_2.py
 per-file-ignores =
     src/__init__.py:D104
     src/*/__init__.py:D104
