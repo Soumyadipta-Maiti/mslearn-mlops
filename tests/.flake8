@@ -10,7 +10,8 @@ ignore =
     N,
     C,
     I
-max-line-length = 79
+; max-line-length = 79
+max-line-length = 100
 exclude = 
     .tox,
     .git,
@@ -19,9 +20,14 @@ exclude =
     *.egg-info,
     .cache,
     .eggs,
-    develop
+    develop,
+    .github/backups,
+    src/model/train_copy.py,
+    src/model/train_copy_2.py
 per-file-ignores =
     src/__init__.py:D104
     src/*/__init__.py:D104
+    src/model/train_copy.py:ALL
+    src/model/train_copy_2.py:ALL
 max-complexity = 10
 import-order-style = pep8
